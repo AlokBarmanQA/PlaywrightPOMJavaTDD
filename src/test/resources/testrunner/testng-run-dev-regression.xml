@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Learn Automation Courses Regression Suite" verbose="4">
+
+	<test name="Learn Automation Courses Test">
+		<classes>
+			<class name="com.qa.freelance.tests.SignInPageTests" />
+			<class name="com.qa.freelance.tests.HomePageTests" />
+		</classes>
+	</test>
+</suite>

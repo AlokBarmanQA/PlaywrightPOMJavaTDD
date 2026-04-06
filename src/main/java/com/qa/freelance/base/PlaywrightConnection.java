@@ -27,7 +27,7 @@ public class PlaywrightConnection {
 		
 		switch (browserName.toLowerCase()) {
 		case "chromium":
-			browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false).setSlowMo(5000));
+			browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false).setSlowMo(1000));
 			break;
 		case "firefox":
 			browser = playwright.firefox().launch(new LaunchOptions().setHeadless(false).setSlowMo(100));

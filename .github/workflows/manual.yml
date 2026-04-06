@@ -6,8 +6,6 @@ name: Manual workflow
 # or API.
 on:
   workflow_dispatch:
-  env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     # Inputs the workflow accepts.
     inputs:
       name:
@@ -29,11 +27,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Set up JDK 21
-      uses: actions/setup-java@v4
-      with:
-        java-version: '21'
-        distribution: 'temurin' # or 'zulu', 'microsoft', etc.
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
